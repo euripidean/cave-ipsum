@@ -1,3 +1,5 @@
+import "./CopyButton.css";
+
 interface CopyButtonProps {
   text: string;
   onClick: () => void;

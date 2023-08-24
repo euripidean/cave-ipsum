@@ -1,20 +1,21 @@
 import React from "react";
+import { TextBox } from "./Components/TextBox/TextBox";
+import { Header } from "./Components/Header/Header";
+import { Footer } from "./Components/Footer/Footer";
 
 const ipsumText = "Written and directed by his red right hand.";
 
+function handleCopy() {
+  console.log("Copied!");
+}
+
 function App() {
   return (
-    <div>
-      <h1>Cave Ipsum</h1>
-      <p>{ipsumText}</p>
-      <button
-        onClick={() => {
-          navigator.clipboard.writeText(ipsumText);
-        }}
-      >
-        Copy
-      </button>
-    </div>
+    <>
+      <Header />
+      <TextBox text={ipsumText} onCopy={handleCopy} />
+      <Footer />
+    </>
   );
 }
 
