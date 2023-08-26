@@ -1,0 +1,51 @@
+h1 {
+  font-size: 5rem;
+  font-family: "Permanent Marker", cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Nothing You Could Do", cursive;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+nav li {
+  list-style: none;
+  text-transform: uppercase;
+}
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}

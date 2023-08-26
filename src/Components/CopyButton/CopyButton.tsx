@@ -13,7 +13,7 @@ function CopyButton(props: CopyButtonProps) {
         props.onClick();
       }}
     >
-      Copy
+      Copy Text
     </button>
   );
 }

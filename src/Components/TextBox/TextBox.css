@@ -6,4 +6,10 @@
   width: 100%;
   background-color: #ffffff;
   color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.Text {
+  font-weight: lighter;
 }

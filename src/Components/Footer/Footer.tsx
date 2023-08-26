@@ -1,7 +1,7 @@
 export function Footer() {
   return (
     <footer>
-      <p>a euripidean joint</p>
+      a <strong>euripidean</strong> joint
     </footer>
   );
 }
