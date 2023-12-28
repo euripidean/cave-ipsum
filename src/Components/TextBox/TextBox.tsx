@@ -1,6 +1,7 @@
 import React from "react";
 import CopyButton from "../CopyButton/CopyButton";
 import { Controls } from "../Controls/Controls";
+import { markovChainGenerator } from "../../Utilities/MarkovChain";
 
 // import css
 import "./TextBox.css";
@@ -10,13 +11,18 @@ interface TextBoxProps {
   onCopy: () => void;
 }
 
-export function TextBox(props: TextBoxProps) {
+const markovChain = markovChainGenerator(
+  "This is a test of the Markov Chain Generator."
+);
+console.log(markovChain);
+
+export function TextBox({ text, onCopy }: TextBoxProps) {
   return (
     <>
       <Controls />
       <div className="TextBox">
-        <p className="Text">{props.text}</p>
-        <CopyButton text={props.text} onClick={props.onCopy} />
+        <p className="Text">{text}</p>
+        <CopyButton text={text} onClick={onCopy} />
       </div>
     </>
   );
